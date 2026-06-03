@@ -29,5 +29,5 @@ fn criar_usuarios(usuario: Json<Value>) -> Json<Vec<Value>> {
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![listarUsuarios, criarUsuarios])
+    rocket::build().mount("/", routes![listar_usuarios, criar_usuarios])
 }
